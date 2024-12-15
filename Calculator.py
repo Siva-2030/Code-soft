@@ -32,18 +32,18 @@ def calculator():
     
     if choice in ['1', '2', '3', '4']:
         # Input numbers
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        n1 = float(input("Enter first number: "))
+        n2 = float(input("Enter second number: "))
         
         # Perform the calculation based on the user's choice
         if choice == '1':
-            print(f"{num1} + {num2} = {add(num1, num2)}")
+            print(f"{n1} + {n2} = {add(n1, n2)}")
         elif choice == '2':
-            print(f"{num1} - {num2} = {subtract(num1, num2)}")
+            print(f"{n1} - {n2} = {subtract(n1, n2)}")
         elif choice == '3':
-            print(f"{num1} * {num2} = {multiply(num1, num2)}")
+            print(f"{n1} * {n2} = {multiply(n1, n2)}")
         elif choice == '4':
-            print(f"{num1} / {num2} = {divide(num1, num2)}")
+            print(f"{n1} / {n2} = {divide(n1, n2)}")
     else:
         print("Please enter a valid input.")
 
