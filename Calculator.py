@@ -1,28 +1,29 @@
 # Calculator program
+#Operation to perform Addition
 def add(a, b):
     return a + b
 
-# Function to perform subtraction
-def subtract(a, b):
+#Operation to perform subtraction
+def sub(a, b):
     return a - b
 
-# Function to perform multiplication
+#Operation to perform multiplication
 def multiply(a, b):
     return a * b
 
-# Function to perform division
+#Operation to perform division
 def divide(a, b):
     if b != 0:
         return a / b
     else:
-        return "Error! Division by zero."
+        return "Error! Divided by zero."
 
 # Main program
 def calculator():
     print("Simple Calculator")
     print("Select operation:")
     print("1. Add")
-    print("2. Subtract")
+    print("2. Sub")
     print("3. Multiply")
     print("4. Divide")
     
@@ -44,7 +45,7 @@ def calculator():
         elif choice == '4':
             print(f"{num1} / {num2} = {divide(num1, num2)}")
     else:
-        print("Invalid Input! Please choose a valid operation.")
+        print("Please enter a valid input.")
 
 # Run the calculator
 calculator()
